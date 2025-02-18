@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  */
+@media (max-width: 1000px) {
+    body{
+        color: orange;
+    }
+}
+
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .navbar {
+            background-color: #4267B2; /* Facebook blue */
+         
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .search-bar {
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .sidebar {
+            background-color: white;
+            height: 100vh;
+            border-right: 1px solid #ccc;
+        }
+
+        .feed {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .like-btn {
+            background-color: #f0f0f0;
+            color: black;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .like-btn.liked {
+            background-color: #4267B2; /* Facebook blue */
+            color: white;
+        }
+           /* Comment section styling */
+           .comment-section {
+            margin-top: 10px;
+        }
+        .comment-box {
+            width: 100%;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .friend-suggestion {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .post-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .post-textarea {
+            resize: none;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .post-btn:hover {
+            background-color: #365899;
+            transform: scale(1.05);
+        }
+          /* Posted content styling */
+          .posted-content {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f2f5;
+            font-size: 16px;
+        }
+        .post-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4267B2; /* Facebook blue */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+
+        .btn-add {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-add:hover {
+            background-color: #45a049;
+        }
+
+        .btn-delete {
+            background-color: #f44336; /* Red */
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-delete:hover {
+            background-color: #d32f2f;
+        }
+
+        /* List styling */
+        .friend-suggestion ul {
+            padding: 0;
+        }
+
+        .friend-suggestion li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        strong{
+            cursor: pointer;
+        }
+        .search-bar {
+            max-width: 500px;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+
+
+
+        /* profile */
+
+/* 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        } */
+        
+        /* Profile card container */
+        .profile-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            /* height: 11cm; */
+        }
+        
+        /* Profile header */
+        .profile-header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+        }
+        
+        /* Profile image */
+        .profile-img {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        
+        /* Profile name */
+        .profile-name {
+            margin: 10px 0 5px;
+            font-size: 22px;
+        }
+        
+        /* Profile title */
+        .profile-title {
+            margin: 0;
+            font-size: 16px;
+            color: #ddd;
+        }
+        
+        /* Profile body */
+        .profile-body {
+            padding: 20px;
+        }
+        
+        /* Profile description */
+        .profile-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        /* Profile info list */
+        .profile-info {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .profile-info li {
+            font-size: 14px;
+            color: #333;
+            margin: 5px 0;
+        }
+        
+        /* Profile footer */
+        .profile-footer {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        /* Button styles */
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #45a049;
+        }
+        
+
+        .theme-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            position: absolute;
+            top: -5px;
+        }
+    
+        /* Dark theme styling */
+        .theme-container.dark {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+    
+        /* Button styling */
+        .theme-toggle {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    
+        /* Button for light theme */
+        .theme-toggle.light {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+    
+        /* Button for dark theme */
+        .theme-toggle.dark {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+
+
+
+
+   
+  #notification-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1050; /* Keep it above other elements */
+    max-width: 300px;
+  }
+  .alert {
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+  }
+  .alert.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+  }

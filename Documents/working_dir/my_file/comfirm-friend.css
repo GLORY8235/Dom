@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+
+.row {
+    display: flex;
+    height: auto; /* Full height */
+    gap: 10px;
+    width: 100%;
+    background-color: red;
+    flex-wrap: wrap;
+    
+  }
+  .col-6 {
+    flex: 1; /* 50% width */
+    border: groove;
+    background-color: #007bff;
+    color: rgb(239, 27, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .col-6 {
+    flex: 1; /* 50% width */
+    width: 50%;
+    background-color: #6c757d;
+    border: groove;
+    color: rgb(243, 19, 19);
+    display: flex;
+    align-items: center;
+    height: 5cm;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .freind{
+    display: flex;
+    justify-content: space-between; 
+    width: 100% !important;
+    border: groove;
+    height: 1cm;
+  }
+  .friend-reques{
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+ 
+  }
+  li{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    align-content: space-between;
+  }
+  .friendrequests{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    padding: 5px;
+    align-content: flex-end;
+  }
+  .moresee{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    align-items: center;
+    align-content: flex-start;
+    padding: 5px;
+
+  }
+
+
+  /* freinds request here  */
+  .Main{
+    display: flex;
+    /* background-color: gray; */
+    width: 100%;
+    /* flex-direction:column ; */
+    border: groove;
+    height: auto;
+    
+  }
+  .wrap-container{
+    height: auto;
+    display: flex;
+    flex-direction:column ;
+    width: 10cm;
+  }
+  .imagecontainer{
+    width: 25.5cm;
+    /* flex-direction:column ; */
+    background:white;
+    height: 8cm;
+    /* background-color: gray; */
+    border: groove;
+    gap: 5px;
+    display: flex;
+  }
+  .wrap_img{
+    width:6cm;
+    /* flex-direction:column ; */
+
+    /* height: 6cm; */
+    background: #dcddde;
+    /* border: groove; */
+    display: flex;
+    align-items: center;
+    align-content:center ;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .my_img{
+    width: 4.5cm ;
+    height: 7.5cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .position{
+    /* background: white; */
+    display: flex;
+    width: 4.9cm;
+    height: 4.5cm;
+    position: absolute;
+    top: 3.3cm;
+    flex-direction: column  ;
+    border-radius: 10px;
+  }
+  .poss{
+    /* height: 4cm; */
+    /* position: absolute; */
+    /* top: -1cm; */
+    background: none;
+
+  }
+  .comfirms{
+    width: 100%;
+    height: 40%;
+    gap: 7px;
+    /* border: groove; */
+    display: flex;
+    flex-direction: column;
+}
+
+.widthed{
+  width: 100%;
+  height:35%;
+  /* border: groove; */
+  justify-content: flex-start;
+  padding: 5px;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: small;
+  margin-top:2ch;
+}
+.widtheds{
+  width: 100%;
+  height: 65%;
+  /* border: groove; */
+  position: relative;
+  display: flex;
+}
+.imgsde_and_fonfirm{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  border-radius: 20px;
+  padding: 1px;
+  
+}
+
+.widthses{
+  display: flex;
+  position: absolute;
+  top: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  
+}
+
+.mutula{
+  font-size: small;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: gray;
+}
+
+.confimes{
+  width: 100%;
+  height: 60%;
+  /* border: groove; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  /* margin: ; */
+
+}
+.button12{
+  background: blue;
+  width: 150px !important;
+  height: 150px !important;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: small;
+  align-content: center;
+  /* align-content: center; */
+  text-align: center;
+  border-radius: 10px;
+  text-transform: capitalize;
+  padding: 7px;
+  /* margin: 10px; */
+
+}
+.btn12{
+  background: #c3c5c8;
+  text-align: center;
+  color: black;
+  text-transform: capitalize;
+  font-size: small;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  
+}

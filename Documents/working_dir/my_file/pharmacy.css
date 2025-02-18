@@ -1,0 +1,713 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+.logos{
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+.inputs{
+    width: 100px;
+    display: flex;
+}
+input:hover{
+border: 2px solid blue;
+}
+.container{
+    flex-direction: column;
+    display: flex;
+    /* border: groove; */
+}
+.wrap1{
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    /* background-color: blue; */
+    flex-direction: column;
+}
+.container1{
+    display: flex;
+    width: 100%;
+    /* border: groove; */
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* search and home */
+
+.wrap-1{
+    width: 100%;
+    /* background-color: rgb(9, 255, 0); */
+    /* gap: 10px; */
+    /* border: groove; */
+    height: 5cm;
+}
+
+.home{
+    display: flex;
+    gap: 10px;
+    /* border: groove; */
+    margin: 1ch;
+    height: 2cm;
+
+}
+.homes{
+    width: 100%;
+}
+.border1{
+    color: #2E8F00;
+    text-transform: capitalize;
+}
+.border1:hover{
+    border: 2px solid blue;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    width: 2cm;
+    height: 1cm;
+}
+.borders:hover{
+    border: 2px solid blue;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    width: 4cm;
+    height: 1cm;
+}
+.borders{
+    text-transform: capitalize;
+}
+
+.borderse:hover{
+    border: 2px solid blue;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    width: 1.3cm;
+    height: 1cm;
+}
+.borderse{
+    text-transform: capitalize;
+}
+/* search and home */
+.wrap2 {
+    width: 100%;
+    height: 5.1cm;
+    background: linear-gradient(
+        to right,          /* Direction of the gradient */
+        #ffaa01bd,         /* Orange with alpha transparency */
+        #3e8f00be          /* Green with alpha transparency */
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.all{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    background: whitesmoke;
+    width: 3cm;
+    height: 5ch;
+    border-radius: 2cm;
+}
+.white{
+    color: green;
+   text-decoration: none;
+   text-transform: uppercase;
+}
+.Vitamins{
+    margin-left: 10px;
+    color: white;
+    margin-top: 10px;
+}
+.Lorem{
+    color: white;
+
+}
+.wrap3{
+    width: 100%;
+    /* background-color: blue; */
+    height: 6cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1cm;
+}
+._wrap1{
+    width: 3.7cm;
+    height: 3cm;
+    gap: 5cm;
+    display: flex;
+    /* border: groove; */
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 5px; */
+    /* justify-content: center; */
+}
+.shop_medicine{
+    height: 2.8cm;
+    width: 5cm;
+    gap: 5px;
+    display: flex;
+    /* background:rgb(71, 153, 51); */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+._wrap1:hover{
+    border: 2px solid blue;
+    padding: 1px;
+}
+.shops1{
+    background:white;
+    width: 12.3ch;
+    height: 2cm;
+    background:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shops2{
+    background:green;
+    width:3.3cm;
+     border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    align-items: center;
+    
+    height: 1.2cm;
+    text-align: center;
+
+    display: flex;
+}
+h6{
+ color: white !important;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 100px;
+ text-align: center;
+ margin: 7px;
+
+}
+
+
+.wrap4{
+    width: 100%;
+    /* background-color: rgb(0, 255, 81); */
+    height:20cm ;
+    /* gap: 10cm; */
+    /* border: groove; */
+    margin-bottom:1cm;
+    background: white;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+}
+.our_offers{
+    width: 100%;
+    margin: 1ch;
+    height: auto;
+    /* border: groove; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    gap: 1cm;
+}
+.vitamin{
+    width: 100%;
+    height:18cm;
+    display: flex;
+    /* border: groove; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1cm;
+
+}
+.add_carded{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    /* border: groove; */
+}
+.add{
+    background: #2E8F00;
+    color: white;
+    border-radius: 20px;
+    width: 3cm;
+    height: 4ch; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.starsesd{
+    /* border: groove; */
+    width: 100%;
+}
+.spll12{
+    margin-right: 5ch;
+}
+.supplement{
+    width: 100%;
+    height: 50%;
+    /* border: groove; */
+    flex-direction: column;
+    display: flex;
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.1);
+    border-radius: 10px;
+    background-color: white;
+}
+.magin{
+    margin: 1ch;
+    display: flex;
+    flex-direction: column;
+}
+.star{
+    background: #f1c40f;
+    width: 2.4ch;
+    height: 2.4ch;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+.wrapthhis{
+    width: 11cm;
+    height: 18cm;
+    display: flex;
+    flex-direction: column;
+}
+.vitamin_card{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+.nairia{
+    font-weight: 900;
+}
+.nairias{
+    font-weight: 600;
+
+}
+.supplementse{
+    font-size: small;
+    font-family: sans-serif;
+    color: black;
+}
+.drugs_supplements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1cm;
+}
+.supplement:hover{
+    border: 3px solid rgb(10, 156, 205);
+
+}
+.regulars{
+    margin-bottom: 2cm;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+.collumn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 1cm;
+    
+}
+.regulars{
+    background: #f1c40f;
+    width: 2.3ch;
+    height: 2.3ch;
+    border-radius: 10cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* .supplementse{
+  padding: 5px;
+}
+.vitamin_card{
+  padding: 5px;
+
+} */
+/* end here */
+.imgs{
+    width: 100px;
+    margin-top: 5px;
+    height: 100px;
+}
+/* drugs container */
+.wrap5{
+    width: 100%;
+    background-color:#E9F8E2;
+    margin-bottom: 1cm;
+    height: 17cm;
+}
+.coutomer{
+    width: 100%;
+    height: 3cm;
+    display: flex;
+    /* border: groove; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.what_do_our_cus_say{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+    font-size: large;
+
+}
+.testimonials{
+    color: #2E8F00;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif0;
+    font-weight: bold;
+}
+.coutomers{
+    width: 100%;
+    height: 13cm;
+    display: flex;
+    /* border: groove; */
+    flex-direction: column;
+}
+.johneve{
+    width: 100%;
+    height: 50%;
+    /* border: groove; */
+    /* background: white; */
+    display: flex;
+    gap: 1cm;
+}
+.johneves{
+    width: 100%;
+    height: 50%;
+    /* border: groove; */
+    display: flex;
+}
+.wrap5:hover{
+    border: 3px solid rgb(10, 156, 205);
+
+}
+.john_evers{
+    width: 50%;
+    height: 6cm;
+    /* border: groove; */
+    background: white;
+    border-radius: 20px;
+    margin: 1ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.1);
+    align-items: center;
+
+}
+.john_everrs{
+    width: 50%;
+    height: 6cm;
+    margin: 1ch;
+  
+    background: white;
+    border-radius: 20px;
+    /* border: groove; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.1);
+    align-items: center;
+
+}
+
+.imge_here{
+width: 30px;
+height: 30px;
+border-radius: 15px;
+margin-bottom: 1cm;
+}
+.profile-img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+li{
+    list-style: none;
+}
+.ultrices{
+    font-size: smaller;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    /* margin-top: 1ch; */
+    margin: 4px;
+}
+.stars{
+    background: #f1c40f;
+    width: 2ch;
+    height: 2ch;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin-top: 1ch;
+    /* border: ; */
+    
+}
+/* how do our customer have to say */
+
+.wrap6{
+    width: 100%;
+    background-color: #F5F5F5;
+    height: 7cm;
+}
+.wrap6:hover{
+    border: 3px solid rgb(10, 156, 205);
+    
+}
+.company{
+    width: 100%;
+    height: 80%;
+    /* border: groove; */
+    display: flex;
+    gap:2cm ;
+}
+.companys{
+    width: 100%;
+    height: 20%;
+    /* border: groove; */
+    display: flex;
+    gap: 1cm;
+}
+.companylogo{
+    width: 20%;
+    /* border: groove; */
+}
+.information{
+    width: 5cm;
+    /* border: groove; */
+}
+.help{
+    width: 4cm;
+    /* border: groove; */
+    display: flex;
+    flex-direction: column;
+}
+.product{
+    width: 6cm;
+    /* border: groove; */
+}
+.logo{
+    margin-top: 1cm;
+}
+.logos1{
+    width: 2cm;
+    height: 2cm;
+}
+.gocitelopment{
+    font-size: xx-small;
+}
+.helps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    color: black;
+    text-transform: capitalize;
+
+}
+.health{
+    color: black;
+    
+}
+.body{
+    flex-direction: column;
+    display: flex;
+}
+.hub{
+    color: #2E8F00;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+
+/* second round */
+.filter{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* border: groove; */
+    flex-direction: column;
+    background-color: #F5F5F5;
+    gap: 1cm;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.fliter2:hover{
+    border: 3px solid rgb(10, 156, 205);
+    
+}
+.fliter1{
+    height: 8cm;
+    display: flex;
+    /* border: groove; */
+    flex-direction: column;
+}
+.fliter2{
+    height: 45cm;
+    display: flex;
+    /* border: groove; */
+    flex-direction: column;
+ 
+}
+.fliter3{
+    height: 8cm;
+    display: flex;
+    /* border: groove; */
+}
+.pharmacy12{
+    width: 100%;
+    height: 5cm;
+    /* border: groove; */
+    display: flex;
+    flex-direction: column;
+}
+.pharmacy13{
+    width: 100%;
+    height: 2cm;
+    /* border: groove; */
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 1, 0.1);
+    background: #F5F5F5;
+    
+
+}
+
+
+.main_container{
+    display: flex;
+ 
+
+}
+.searchs{
+    width: 100%;
+    display: flex;
+    /* border: groove; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.inputed {
+    width: 100%; /* Input takes full width of container */
+    padding: 10px; /* Add some padding for better aesthetics */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 4px; /* Optional rounded corners */
+    box-sizing: border-box; /* Ensure padding/border are included in width */
+  }
+ .filter_touch{
+    width: 7.8cm;
+    /* border: groove; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    
+  }  
+  .filter_touch1{
+    /* border: groove; */
+    width: 7.8cm;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+  }  
+  .filter_touch2{
+    /* border: groove; */
+    width: 8cm;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    /* margin-right: 5cm; */
+  } 
+  .charset{
+    margin: 5px;
+  }
+  .magin{
+    margin-bottom: 1.3cm;
+  }
+
+  /* @media screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+        background-color: lightblue;
+    }
+    .container {
+        padding: 20px;
+        flex-direction: row;
+    }
+    .wrap1, .wrap2 {
+        width: 80%;
+    }
+} */
+
