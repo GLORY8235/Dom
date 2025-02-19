@@ -126,3 +126,79 @@ function colorize() {
 }
 
 
+
+const form = document.querySelector('#shelterForm');
+const inputs = document.querySelector('#catName')
+const list = document.querySelector('#cats')
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    // when the form is submited do not sent any request just end here
+    // just stop 
+    const catName = inputs.value; 
+    const newLi = document.createElement("LI")
+   newLi.innerText = catName;
+   list.append(newLi);
+   inputs.value = "";
+})
+
+
+// const tweetform = document.querySelector('#tweetForm');
+// const tweetContainer = document.querySelector('.tweetted')
+// tweetform.addEventListener("submit", function (e) {
+//     e.preventDefault();
+//     // const usernameinput = document.querySelectorAll('#input1')[0]
+//     // const tweetinput = document.querySelectorAll('#input1')[1]
+//     // console.log(usernameinput.value, tweetinput.value)
+//     const usernameinput = tweetform.elements.username;
+//     const tweetinput = tweetform.elements.tweet;
+//     addTweet(usernameinput.value, tweetinput.value)
+//     usernameinput.value = '';
+//     tweetinput.value = '';
+
+// })
+// const addTweet = (username, tweet) => {
+//     const newTweet = document.createElement('li');
+//     const bTag = document.createElement('b');
+//     bTag.append(username)
+//     newTweet.append(bTag);
+//     newTweet.append(`- ${tweet}`)
+//     tweetContainer.append(newTweet);
+// }
+// Select the tweet form and the container where tweets will be displayed
+const tweetform = document.querySelector('#tweetForm');
+const tweetContainer = document.querySelector('#tweets');
+
+// Add an event listener for form submission
+tweetform.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent the default form submission
+
+    // Access the input elements via the form's elements collection
+    const usernameinput = tweetform.elements.username;
+    const tweetinput = tweetform.elements.tweet;
+
+    // Add the tweet to the container
+    addTweet(usernameinput.value, tweetinput.value);
+
+    // Clear the input fields after submission
+    usernameinput.value = '';
+    tweetinput.value = '';
+});
+
+// Function to create a new tweet element and append it to the container
+const addTweet = (username, tweet) => {
+    // Create a new list item for the tweet
+    const newTweet = document.createElement('li');
+
+    // Create a bold tag for the username
+    const bTag = document.createElement('b');
+    bTag.append(username); // Insert the username into the bold tag
+
+    // Append the bold username and the tweet text to the list item
+    newTweet.append(bTag);
+    newTweet.append(` - ${tweet}`);
+
+    // Append the new tweet element to the tweet container
+    tweetContainer.append(newTweet);
+}
+
+

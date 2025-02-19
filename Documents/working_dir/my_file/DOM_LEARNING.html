@@ -69,11 +69,21 @@
     <h2 class="h2">click me</h2>
     <h2 class="h2">click me</h2>
 
-    <form action="/shelter">
-        <input type="text" />
+    <form action="/shelter" id="shelterForm">
+        <input type="text" id="catName" />
+        <ul></ul>
         <button>submit</button>
     </form>
+    <h2>Available cats</h2>
+    <ul id="cats"></ul>
 
+    <form action="/dogs" id="tweetForm">
+        <input type="text" name="username"  placeholder="username"  id="input1">
+        <input type="text" name="tweet" placeholder="tweet" id="input1">
+        <button  class="">post tweet</button>
+    </form>
+    <h2>tweets</h2>
+    <ul id="tweets"></ul>
     <img id="banner"
         src="https://images.unsplash.com/photo-1563281577-a7be47e20db9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
         alt="">
