@@ -131,7 +131,7 @@ const form = document.querySelector('#shelterForm');
 const inputs = document.querySelector('#catName')
 const list = document.querySelector('#cats')
 form.addEventListener("submit", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
     // when the form is submited do not sent any request just end here
     // just stop 
     const catName = inputs.value; 
@@ -170,7 +170,7 @@ const tweetContainer = document.querySelector('#tweets');
 
 // Add an event listener for form submission
 tweetform.addEventListener("submit", function (e) {
-    e.preventDefault(); // Prevent the default form submission
+    // e.preventDefault(); // Prevent the default form submission
 
     // Access the input elements via the form's elements collection
     const usernameinput = tweetform.elements.username;
