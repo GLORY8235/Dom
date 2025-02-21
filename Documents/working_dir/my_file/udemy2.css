@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .display{
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    text-align: center !important; 
+    padding: 0;
+    width: 100%;
+    background-color: rebeccapurple;
+} */
+.displays {
+    display: flex;
+    flex-direction: row;  /* Place items in a row */
+    gap: 5px;  /* Space between "Udemy" and "EXPLORE" */
+    justify-content: flex-start;  /* Align items to the left */
+    align-items: center;  /* Keep them aligned in the center */
+    text-align: left;  /* No need for center alignment */
+    padding: 0;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+}
+h3s {
+    font-size: 12px;  /* Adjust based on preference */
+    color: gray;
+    font-weight: 200;  /* Light font weight */
+    margin: 0;  /* Removes default margins */
+    padding: 0;  /* Removes extra space */
+}
+
+.display {
+    display: flex;
+    flex-direction: row;  /* Keep Udemy & EXPLORE in a row */
+    gap: 1cm;  /* Space between Udemy & EXPLORE */
+    justify-content: flex-start;  /* Align to the left */
+    align-items: center;  /* Align text in center */
+    text-align: left;  /* No need for center */
+    padding: 0;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+}
+
+.hthree {
+    font-size: clamp(10px, 2vw, 16px);  /* Responsive font size */
+    color: gray;
+    font-weight: 400;  /* Normal font weight */
+    margin: 0;  /* Removes extra spacing */
+    padding: 0;
+    white-space: nowrap;  /* Prevents text from breaking into a new line */
+    display: flex;
+    /* margin-left: 5px; */
+}
+.border{
+    border-radius: 10px;
+}
+.border:hover{
+    border-radius: 15px;
+    
+}
+.image{
+    width: 50px;
+    height: 50px;
+}
+
+.display1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1cm;
+    position: relative;
+}
+.position{
+    position: absolute;
+    background-color: purple;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+
+}
+.positions{
+    position: absolute;
+    background-color: purple;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+
+}
+.bar{
+    display: flex;
+    justify-content: flex-end;
+}
+.hrs{
+    display: flex;
+    margin-bottom: 80px;
+    background-color: purple;
+}
