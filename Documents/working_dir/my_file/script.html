@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .winner{
+            color: green;
+        }
+        .loser{
+            color: red;
+        }
+    </style>
+    <div class="bodys">
+    <div class="jumbotron">
+
+<!-- <h1 class="wellcometomysite">wellcome to my site</h1>
+<h1 class="wellcometomysite">wellcome to my site</h1>
+<h1 class="wellcometomysite">wellcome to my site</h1>
+<h1 class="wellcometomysite">wellcome to my site</h1>
+<h1 class="wellcometomysite">wellcome to my site</h1>
+<h1 class="wellcometomysite">wellcome to my site</h1> -->
+
+
+<div class="wrapper">
+    <form action="">
+        <h1>login</h1>
+        <div class="input-box">
+             <input type="text" placeholder="username" required>
+             <i class='bx bxs-user'></i>
+        </div>
+
+        <div   class="input-box">
+            <input type="password" placeholder="password" required>
+            <i class='bx bxs-lock-alt'></i>
+       </div>
+       <div class="remember-forgot">
+        <label for=""><input type="checkbox">Remember me</label>
+        <a href="">forgot password</a>
+       </div>
+
+       <button type="submit" class="btn">login</button>
+       <div class="register-link">
+            <p>Don't have an account? <a href="#">Register</a></p>
+       </div>
+    </form>
+</div>
+</div>
+</div>
+
+
+<!-- 
+<h1>Todo List</h1>
+<ul>
+    <li>"new" - Add a Todo</li>
+    <li>"List" - List All Todos</li>
+    <li>"delete" - Remove specific Todo</li>
+    <li>"quit" - Quit app</li>
+</ul>
+
+
+<h1>look at my pokemon</h1>
+<section id="container"></section> -->
+
+
+
+
+
+
+
+<button onclick="alert('you clicked me ')"></button>
+
+<!-- <section class="section"> -->
+<div class="container">
+    <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+                <div class="card-video">
+                    <figure class="video-container is-2by1">
+                        <video id="video-player" class="video-player"  controls>
+                            <!-- <source id="video-source" src="C:\Users\USER\Documents\working_dir\loading" type="video/mp4"> -->
+                            <source id="video-source" src="my_file/loading/loading.mp4" type="video/mp4">
+
+                        </video>
+                    </figure>
+                </div>
+                <button id="next-btn">next</button>
+                
+                <header class="card-header">
+                  <p class="card-header-title">Ping Pong Score Keeper</p>
+                  
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                     <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>    
+                    <p class="subtitle">use the button below to keep score</p>
+
+                    <label for="playTo" class="label is-large is-inline">Playing TO</label>
+                    <div class="select is-rounded">                
+                            <select name="" id="playTo">
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                            </select>
+                    </div>
+                  </div>
+                </div>
+                <footer class="card-footer">
+                    <button id="p1Button" class="is-primary button card-footer-item">+1 player one</button>
+                    <button id="p2Button" class="is-info button card-footer-item">+1 player two</button>
+                    <button id="reset" class="is-danger button card-footer-item">Reset</button>
+                 
+                </footer>
+              </div>
+        </div>
+    </div>
+</div>
+
+<!-- </section> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

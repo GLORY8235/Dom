@@ -963,26 +963,98 @@ const user2 = {
 // const = {email,  password, died = 'N/A'} = user2;
 // console.log{died};
 
-let button = document.querySelector('.button');
-button.addEventListener('click', function (){
-    document.body.style.backgroundColor = 'olive';
-})
+// let button = document.querySelector('.button');
+// button.addEventListener('click', function (){
+//     document.body.style.backgroundColor = 'olive';
+// })
 
 
 
-let button1 = document.querySelector('.buttons');
-const h1 = document.querySelector('.welcome')
-button1.addEventListener('click', function () {
-    const r = Math.floor(Math.random() * 255); // 256 to include 255
-    const g = Math.floor(Math.random() * 255);
-    const b = Math.floor(Math.random() * 255);  
-    
-    // Correcting the rgb format
-    const newColor = `rgb(${r}, ${g}, ${b})`;
-    
-    document.body.style.backgroundColor = newColor;
-    h1.innerText = newColor;
-    h1.style.color = "white";
+
+const p1Button = document.querySelector('#p1Button');
+const p2Button = document.querySelector('#p2Button');
+const resetButton = document.querySelector('#reset');
+const p1Display = document.querySelector('#p1Display');
+const p2Display = document.querySelector('#p2Display');
+const winingSlected = document.querySelector('#playTo');
+
+let p1Score = 0;
+let p2Score = 0;
+let winingScore = 5;
+let isGameOver = false;
+
+p1Button.addEventListener('click', function() {
+  if (!isGameOver) {
+    p1Score++;
+    if (p1Score === winingScore) {
+      isGameOver = true;
+      // Optionally, add winner/loser classes:
+      p1Display.classList.add('winner');
+      p2Display.classList.add('loser');
+    }
+    p1Display.textContent = p1Score;
+  }
 });
 
+p2Button.addEventListener('click', function() {
+  if (!isGameOver) {
+    p2Score++;
+    if (p2Score === winingScore) {
+      isGameOver = true;
+      // Optionally, add winner/loser classes:
+      p2Display.classList.add('winner');
+      p1Display.classList.add('loser');
+    }
+    p2Display.textContent = p2Score;
+  }
+});
 
+winingSlected.addEventListener('change', function() {
+  winingScore = parseInt(this.value);
+  reset();
+});
+
+resetButton.addEventListener('click', reset);
+
+function reset() {
+  isGameOver = false;
+  p1Score = 0;
+  p2Score = 0;
+  p1Display.textContent = 0;
+  p2Display.textContent = 0;
+  p1Display.classList.remove('winner', 'loser');
+  p2Display.classList.remove('winner', 'loser');
+}
+
+
+
+const videoList = [
+    // "my_file/loading.mp4",  // ✅ Corrected path
+    // "my_file/loading/video2.mp4",
+    // "my_file/loading/video3.mp4",
+    // "my_file/loading/video4.mp4"
+
+    "my_file/loading/loading.mp4",  // ✅ Inside my_file/loading/
+    "my_file/loading/video2.mp4",
+    "my_file/loading/video3.mp4"
+];
+
+let currentIndex = 0;
+const videoPlayer = document.getElementById("video-player");
+const videoSource = document.getElementById("video-source");
+const nextBtn = document.getElementById("next-btn");
+
+nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % videoList.length; // Loop back when reaching the last video
+    videoSource.src = videoList[currentIndex];
+    videoPlayer.load(); // Reload video
+    nextBtn.style.color = "red";
+    nextBtn.style.backgroundColor = "white";
+    nextBtn.style.borderRadius = "15px";
+    nextBtn.style.width = "1cm";
+
+    // ✅ Wait for the video to load before playing to avoid errors
+    videoPlayer.onloadeddata = () => {
+        videoPlayer.play();
+    };
+});

@@ -5,15 +5,15 @@
    font-family: "poppins", sans-serif ; 
 }
 
-body{
+.bodys{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: seagreen;
     flex-direction: column;
-    background: url('../my_file/imgs.jpg') no-repeat center center/cover;
     background-size: cover;
+    background: url('../my_file/imgs.jpg') no-repeat center center/cover;
     background-position: center;
 
 }
@@ -114,5 +114,6 @@ body{
     min-height: 100vh;
     /* background-color: seagreen; */
     flex-direction: column;
+
 
 }
