@@ -991,6 +991,8 @@ p1Button.addEventListener('click', function() {
       // Optionally, add winner/loser classes:
       p1Display.classList.add('winner');
       p2Display.classList.add('loser');
+      p1Button.disabled = true;
+      p2Button.disabled = true;
     }
     p1Display.textContent = p1Score;
   }
@@ -1004,6 +1006,9 @@ p2Button.addEventListener('click', function() {
       // Optionally, add winner/loser classes:
       p2Display.classList.add('winner');
       p1Display.classList.add('loser');
+      p1Button.disabled = true;
+      p2Button.disabled = true;
+      
     }
     p2Display.textContent = p2Score;
   }
@@ -1024,19 +1029,17 @@ function reset() {
   p2Display.textContent = 0;
   p1Display.classList.remove('winner', 'loser');
   p2Display.classList.remove('winner', 'loser');
+  p1Button.disabled = false;
+  p2Button.disabled = false;
+
 }
 
 
 
 const videoList = [
-    // "my_file/loading.mp4",  // ✅ Corrected path
-    // "my_file/loading/video2.mp4",
-    // "my_file/loading/video3.mp4",
-    // "my_file/loading/video4.mp4"
-
-    "my_file/loading/loading.mp4",  // ✅ Inside my_file/loading/
-    "my_file/loading/video2.mp4",
-    "my_file/loading/video3.mp4"
+    "loading/Tennis1.mp4",
+    "loading/Tennis2.mp4",
+    "loading/Tennis3.mp4"
 ];
 
 let currentIndex = 0;
@@ -1044,17 +1047,30 @@ const videoPlayer = document.getElementById("video-player");
 const videoSource = document.getElementById("video-source");
 const nextBtn = document.getElementById("next-btn");
 
+// ✅ Play next video when clicking "Next" button
 nextBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % videoList.length; // Loop back when reaching the last video
+    currentIndex = (currentIndex + 1) % videoList.length; 
     videoSource.src = videoList[currentIndex];
-    videoPlayer.load(); // Reload video
+    videoPlayer.load(); 
+
+    // ✅ Change Button Style
     nextBtn.style.color = "red";
     nextBtn.style.backgroundColor = "white";
     nextBtn.style.borderRadius = "15px";
-    nextBtn.style.width = "1cm";
+    nextBtn.style.width = "5cm";  
 
-    // ✅ Wait for the video to load before playing to avoid errors
+    console.log("Playing:", videoList[currentIndex]);
+
+    // ✅ Wait for video to load before playing
     videoPlayer.onloadeddata = () => {
         videoPlayer.play();
     };
 });
+
+// ✅ Add Hover Effect
+nextBtn.onmouseover = () => {
+    nextBtn.style.color = "pink";
+};
+nextBtn.onmouseout = () => {
+    nextBtn.style.color = "red";
+};

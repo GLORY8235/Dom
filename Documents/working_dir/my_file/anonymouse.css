@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background: #B8C0FFff !important;
+    /* width: 100%;      */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+   
+}
+.wrapper{
+    background: #0D121Fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+    flex-direction: column;
+
+}
+.main{
+   border: 2px solid rebeccapurple;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    /* height:2cm; */
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+
+}
+.developer{
+    color: white;
+     justify-content: flex-end;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 8px;
+}
+li{
+    color: white;
+    list-style: none;
+    /* display: block; */
+    width: 100%;
+}
+ul{
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.main2{
+    border: 2px solid rebeccapurple;
+    width: 97%;
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    /* margin-bottom: 25px; */
+    /* margin-top: 25px; */
+
+    height:10cm;
+    background: #92D4E0ff;
+    display: flex;
+
+}
+.main1{
+    border: 2px solid rebeccapurple;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    height:10cm;
+}
+.cardS{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+}
+.inner-div1{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    /* background: gray; */
+    
+}
+.inner-div2{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* background-color: goldenrod; */
+}
+.image{
+    width: 100px;
+    height: 100px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    flex-direction: column;
+   
+
+}
+/* .mageing{
+    background-size: cover;
+    background: url('../my_file/imgs.jpg') no-repeat center center/cover;
+    background-position: center;
+} */
+.col{
+    /* flex-direction: column; */
+    display: flex;
+}
